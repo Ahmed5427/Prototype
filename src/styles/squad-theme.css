@@ -1,0 +1,189 @@
+/* SQUAD Brand Colors */
+:root {
+  --squad-primary: #281362;    /* Dark Purple */
+  --squad-secondary: #A08FF6;  /* Medium Purple */
+  --squad-light: #C0B8FA;      /* Light Purple */
+  --squad-accent: #FE6A11;     /* Orange */
+  --squad-grey: #6B7280;       /* Grey for previous buttons */
+}
+
+/* Apply SQUAD branding to key elements */
+.squad-primary {
+  background-color: var(--squad-primary);
+  color: white;
+}
+
+.squad-primary:hover {
+  background-color: #1f0d4f;
+}
+
+.squad-secondary {
+  background-color: var(--squad-secondary);
+  color: white;
+}
+
+.squad-light {
+  background-color: var(--squad-light);
+  color: var(--squad-primary);
+}
+
+.squad-accent {
+  background-color: var(--squad-accent);
+  color: white;
+}
+
+.squad-accent:hover {
+  background-color: #e55a0f;
+}
+
+/* Progress indicator styling */
+.squad-progress-active {
+  background-color: var(--squad-primary);
+  color: white;
+}
+
+.squad-progress-completed {
+  background-color: var(--squad-secondary);
+  color: white;
+}
+
+.squad-progress-pending {
+  background-color: var(--squad-light);
+  color: var(--squad-primary);
+}
+
+/* Default button styling - SQUAD Orange */
+button:not(.squad-button-outline):not(.squad-button-ghost):not(.squad-button-previous) {
+  background-color: var(--squad-accent) !important;
+  color: white !important;
+  border: none !important;
+}
+
+button:not(.squad-button-outline):not(.squad-button-ghost):not(.squad-button-previous):hover {
+  background-color: #e55a0f !important;
+}
+
+/* Previous button styling - Grey */
+.squad-button-previous {
+  background-color: var(--squad-grey) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.squad-button-previous:hover {
+  background-color: #4B5563 !important;
+}
+
+/* Specific button classes */
+.squad-button-primary {
+  background-color: var(--squad-accent);
+  color: white;
+  border: none;
+}
+
+.squad-button-primary:hover {
+  background-color: #e55a0f;
+}
+
+.squad-button-accent {
+  background-color: var(--squad-accent);
+  color: white;
+  border: none;
+}
+
+.squad-button-accent:hover {
+  background-color: #e55a0f;
+}
+
+.squad-button-outline {
+  background-color: transparent;
+  color: var(--squad-accent);
+  border: 2px solid var(--squad-accent);
+}
+
+.squad-button-outline:hover {
+  background-color: var(--squad-accent);
+  color: white;
+}
+
+.squad-button-ghost {
+  background-color: transparent;
+  color: var(--squad-primary);
+  border: none;
+}
+
+.squad-button-ghost:hover {
+  background-color: var(--squad-light);
+}
+
+/* Form element styling */
+.squad-input-focus:focus {
+  border-color: var(--squad-primary);
+  box-shadow: 0 0 0 3px rgba(40, 19, 98, 0.1);
+}
+
+.squad-card-border {
+  border-color: var(--squad-light);
+}
+
+.squad-text-primary {
+  color: var(--squad-primary);
+}
+
+.squad-text-secondary {
+  color: var(--squad-secondary);
+}
+
+.squad-text-accent {
+  color: var(--squad-accent);
+}
+
+/* Custom scrollbar styling - Light Purple */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--squad-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--squad-secondary);
+}
+
+/* Override default button styles */
+.bg-blue-600, .bg-blue-500 {
+  background-color: var(--squad-accent) !important;
+}
+
+.bg-blue-600:hover, .bg-blue-500:hover {
+  background-color: #e55a0f !important;
+}
+
+.bg-green-600 {
+  background-color: var(--squad-accent) !important;
+}
+
+.bg-green-600:hover {
+  background-color: #e55a0f !important;
+}
+
+/* Priority level buttons */
+.priority-button {
+  background-color: var(--squad-light) !important;
+  color: var(--squad-primary) !important;
+  border: 2px solid var(--squad-light) !important;
+}
+
+.priority-button.selected {
+  background-color: var(--squad-primary) !important;
+  color: white !important;
+  border: 2px solid var(--squad-primary) !important;
+}
+
