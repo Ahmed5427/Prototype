@@ -143,7 +143,7 @@ const Step4AutomationVision = ({ data, onUpdate, onNext, onPrevious }) => {
 
       console.log('Submitting form data:', completeFormData);
       
-      await fetch('https://script.google.com/macros/s/AKfycby5nKOzZ_2iMmZAWqtjj9JCwXnUx4ipPcGGyOMJxR55LyUb-Pe5qX25UD3yklI90d2F/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbzkbS6mDFpSxFiCuaPb3px2-TubAHaBnLU4p7tPFVQh5nIChHz5lrNP15Z4aOfvYHMQ/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
