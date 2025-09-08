@@ -32,7 +32,7 @@ exports.handler = async (event, context) => {
     console.log(`Looking for analysis data for requestId: ${requestId}`);
     
     // Call your Google Apps Script to check for analysis results
-    const scriptUrl = 'https://script.google.com/macros/s/AKfycbwmUwyPrzm0Ql-OcYs29r6rafg0nvikDU539JwolcJEHhphlXKd7XeIl2N822G2RB5G/exec';
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycby5nKOzZ_2iMmZAWqtjj9JCwXnUx4ipPcGGyOMJxR55LyUb-Pe5qX25UD3yklI90d2F/exec';
     
     try {
       const response = await fetch(`${scriptUrl}?action=getAnalysis&requestId=${requestId}`, {
@@ -78,4 +78,5 @@ exports.handler = async (event, context) => {
     };
   }
 };
+
 
